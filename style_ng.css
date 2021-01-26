@@ -1,0 +1,842 @@
+/*
+
+	Nameless Geometry by nodethirtythree + Templated.org
+	http://templated.org/ | @templatedorg
+	Released under the Creative Commons Attribution 3.0 License.
+	
+	Note from the author: These templates take quite a bit of time to conceive,
+	design, and finally code. So please, support our efforts by respecting our
+	license: keep our footer credit links intact so people can find out about us
+	and what we do. It's the right thing to do, and we'll love you for it :)
+	
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #cfcfcf;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-size: 11pt;
+	line-height: 1.5em;
+	font-family: 'Trebuchet MS', sans-serif;
+	background: #1f1f1f url('images/bg.png');
+	color: #909090;
+}
+
+strong {
+	color: #cfcfcf;
+}
+
+br.clear {
+	clear: both;
+}
+
+h1,h2,h3,h4 {
+	font-weight: normal;
+	color: #eaeaea;
+	text-shadow: 0 2px 1px #181818;
+}
+
+h2,h3,h4 {
+        margin-top: 0.5em;
+	margin-bottom: 0.2em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #ffffff;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.5em;
+}
+h4 {
+	font-size: 1.2em;
+}
+
+img {
+	/*border-bottom: solid 2px #1c1c1c;*/
+}
+
+img.left {
+	float: left;
+	margin: 4px 20px 20px 0;
+}
+
+img.right {
+	float: right;
+	margin: 4px 20px 20px 0;
+}
+
+img.top {
+	margin: 4px 0 20px 0;
+}
+
+p {
+	margin-bottom: 1.25em;
+}
+
+ul {
+	margin-bottom: 3em;
+}
+
+#bg {
+	background: url('images/shadow.png') top left repeat-x;
+	padding: 0px 0 0 0;
+}
+
+#banner {
+	background: #ffffff;
+}
+
+.originalbox1{
+    width: 556px;
+    overflow: hidden;
+    margin: 0 0 28px 0;
+}
+
+.box1 {
+	/*width: 556px;*/
+	overflow: hidden;
+	margin: 0 0 0 0;
+}
+
+
+
+.box2 {
+	width: 264px;
+	overflow: hidden;
+	float: left;
+}
+
+.box3 {
+	width: 264px;
+	overflow: hidden;
+	margin: 0 0 0 292px;
+}
+
+#originalcontent{
+    width: 556px;
+    margin: 0 0 0 280px;
+    padding: 0;
+}
+
+#content {
+	/*width: 556px;*/
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+#copyright {
+	text-align: center;
+	padding: 8px 0 8px 0;
+	color: #404040;
+	text-shadow: 0 1px 0 #101010;
+}
+
+#copyright a {
+	color: #404040;
+}
+
+#footer {
+	position: relative;
+	padding: 8px;
+	width: 1116px;
+	color: #808080;
+	margin-top: 8px;
+	text-shadow: 0 1px 0 #000000;
+}
+
+#footer a {
+	color: #a0a0a0;
+}
+
+#footer h2, #footer h3, #footer h4 {
+	color: #ffffff;
+}
+
+#footer p {
+	margin-bottom: 0;
+}
+
+#footer ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+#footer ul li {
+	padding: 16px 0 16px 0;
+	border-top: solid 1px #353535;
+	border-bottom: solid 1px #101010;
+}
+
+#footer ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#footer ul li.last {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+#footerContent {
+	width: 836px;
+	float: left;
+}
+
+#footerSidebar {
+	width: 252px;
+	margin: 0 0 0 864px;
+}
+
+#header {
+	position: relative;
+	padding: 16px;
+	height: 40px;
+}
+
+#logo {
+	position: relative;
+	top: 0px;
+	left: 32px;
+	height: 32px;
+	line-height: 30px;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #ffffff;
+	text-shadow: 0 2px 2px #000000;
+}
+
+#logo h1 {
+	font-size: 3em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#main {
+	position: relative;
+	padding: 16px 8px 16px 8px;
+	/*width: 1116px;*/
+	background: #262626 url('images/cbg.png') top left repeat-x;
+	border-top: solid 1px #606060;
+	border-bottom: solid 1px #151515;
+	text-shadow: 0 1px 0 #101010;
+}
+
+#originalmain
+{
+    position: relative;
+    padding: 16px 8px 16px 8px;
+    width: 1116px;
+    background: #262626 url('images/cbg.png') top left repeat-x;
+    border-top: solid 1px #606060;
+    border-bottom: solid 1px #151515;
+    text-shadow: 0 1px 0 #101010;
+}
+
+#main ul {
+	/*list-style: none;*/
+}
+
+#rightcolumn ul li {
+	padding: 12px 0 12px 0;
+	border-top: solid 1px #404040;
+	border-bottom: solid 1px #181818;
+        list-style: none;
+}
+
+#leftcolumn ul li {
+	padding: 12px 0 12px 0;
+	border-top: solid 1px #404040;
+	border-bottom: solid 1px #181818;
+        list-style: none;
+}
+
+#main ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#main ul li.last {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+#main ul.imageList {
+	list-style: none;
+}
+
+#main ul.imageList li {
+	padding: 20px 0 20px 0;
+}
+
+#main ul.imageList li.first {
+	padding-top: 0;
+}
+
+#main ul.imageList li.last {
+	padding-bottom: 0;
+}
+
+#main ul.imageList li img {
+	float: left;
+}
+
+#main ul.imageList li p {
+	padding: 0;
+	margin: 0;
+}
+
+#nav {
+	position: absolute;
+	right: 32px;
+	height: 50px;
+	line-height: 50px;
+	top: 75px;
+	background: #6f2f2f url('images/navbg.png') top left repeat-x;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.4em;
+	padding: 0 1em 0 1em;
+	border-top: solid 1px #ab6f6f;
+}
+
+#nav a {
+	text-decoration: none;
+	color: #ffffff;
+	text-shadow: 0 2px 1px #3F1C1C;
+}
+
+#nav li {
+	margin: 0 1em 0 1em;
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav ul li {
+	float: left;
+}
+
+#outer {
+	position: relative;
+	/*width: 1180px;*/
+	margin: 0 8px 0 8px;
+}
+
+#search input.button {
+	margin-left: 1em;
+	border: 0;
+	color: #ffffff;
+	background: #6f2f2f;
+	padding: 9px;
+}
+
+#search input.text {
+	border: solid 1px #ffffff;
+	padding: 8px;
+}
+
+#sidebar1 {
+	width: 252px;
+	float: left;
+	padding: 0;
+}
+
+#sidebar2 {
+	width: 252px;
+	float: right;
+	padding: 0;
+}
+
+#statusbar {
+    margin: 0px;
+    height: 27px;
+    background-color: #000000;
+    color: white;
+    padding: 5px;
+}
+
+#statusbar p{
+    margin: 2px;
+    display: block;
+}
+
+#statusbar .right{
+    float: right;
+}
+
+#statusbar .left{
+    float: left;
+}
+
+#playerinfo{
+    padding: 5px;
+    width: 48%;
+    min-width: 300px;
+    float: left;
+}
+
+#gamestatus{
+    padding: 5px;
+    width: 48%;
+    float: right;
+    min-width: 300px;
+}
+
+#chatdiv {
+    height: 150px;
+    width: 48%;
+    border: solid 1px;
+    overflow: scroll;
+    margin: 14px 0 2px 0;
+    padding: 5px 0 6px 0;
+    float: left;
+    overflow-x: hidden;
+}
+
+#otherchatdiv {
+    width: 48%;
+    margin: 14px 0 2px 0;
+    padding: 5px 0 6px 0;
+    float: left;
+}
+
+#notesdiv {
+    width: 50%;
+    margin: 14px 0 2px 10px;
+    padding: 5px 0 6px 25px;
+    float: right;
+    padding-left: 10px;
+    overflow-x: hidden;
+}
+    
+#gamemsgs{
+    height: 150px;
+    width: 48%;
+    border: solid 1px;
+    overflow: scroll;
+    margin: 14px 0 2px 0;
+    padding: 5px 0 6px 0;
+    float: right;
+    padding-left: 10px;
+    overflow-x: hidden;
+}
+
+#mapcontainer {
+    height: 400px;
+    width: 100%;
+    min-width: 300px;
+    border: solid 1px;
+    padding: 5px 0 6px 0;
+    background-color: black;
+    overflow: hidden;
+    float: left;
+    resize: vertical;
+    background-image: url('images/star-tile-far-away.jpg');
+}
+
+#map{
+    position: relative;
+    left: 405px;
+    top: 350px;
+    resize: none;
+    text-shadow: 0 0 0 #000000;
+}
+
+#zoom-buttons{
+    margin-top: 7px;
+}
+    
+#info{
+    height: 400px;
+    background-color: #333333;
+    padding: 5px;
+    width: 400px;
+    margin-right: -425px;
+    float: right;
+    
+    overflow: scroll;
+    resize: vertical;
+    overflow-x: hidden;
+}
+
+#globalchatdiv {
+    height: 350px;
+    width: 70%;
+    border: solid 1px;
+    overflow: scroll;
+    margin: 14px 0 2px 0;
+    padding: 5px 0 6px 0;
+    float: left;
+    overflow-x: hidden;
+}
+#globalchatdiv .load{
+    padding-left: 10px;
+}
+
+#globalwhodiv {
+    height: 350px;
+    width: 28%;
+    border: solid 1px;
+    overflow: scroll;
+    margin: 14px 0 2px 0;
+    padding: 5px 0 6px 0;
+    float: right;
+    overflow-x: hidden;
+}
+#globalwhodiv p{
+    padding-left: 10px;
+}
+
+.fluid {
+    padding-right: 425px;
+}
+
+.load{
+    display: inline;
+}
+
+.territory{
+    font-size: 7px;
+    overflow: hidden;
+    opacity: 0.8;
+    /*-moz-box-shadow:    inset 0 0 10px #FF0000;
+    -webkit-box-shadow: inset 0 0 10px #00FF00;
+    box-shadow:         inset 0 0 10px Coral;*/
+}
+
+.territory p{
+    margin-top: 2px;
+    margin-bottom: 0px;
+    text-align: center;
+    font: normal 8px Verdana, sans-serif;
+    line-height: 95%;
+}
+
+.bolder{
+    font: bold 8px Verdana, sans-serif;
+}
+
+#footer{
+    text-align: center;
+}
+
+input{
+    clear: both;
+    display: block;
+}
+
+.inline{
+    display: inline;
+}
+    
+
+.notice{
+    margin:20px;
+    padding: 5px;
+    border: solid 2px green;
+    background-color: #e0f2be;
+    color: black;
+    text-align: right;
+    font-weight: bold;
+    /*min-width: 300px;*/
+    text-shadow: 0 0 0 #000000;
+}
+
+.notice p{
+    display: inline;
+}
+
+.error{
+    margin:20px;
+    padding: 5px;
+    border: solid 2px red;
+    background-color: #ffcccc;
+    color: black;
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 0 0 0 #000000;
+}
+
+.error p{
+    display: inline;
+}
+
+.warning{
+    margin:20px;
+    padding: 5px;
+    border: solid 2px yellow;
+    background-color: #F6FA80;
+    color: black;
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 0 0 0 #000000;
+}
+
+.warning p{
+    display: inline;
+}
+
+.bg {background: url(images/button4.gif);}
+.menub {padding:0 0 0 32px; margin:0; list-style:none; height:40px; background:#fff url(images/button1a.gif) repeat-x; position:relative; font-family:arial, verdana, sans-serif; }
+.menub li.top {display:block; float:left; position:relative;}
+.menub li a.top_link {display:block; float:left; height:40px; line-height:33px; color:#bbb; text-decoration:none; font-size:11px; font-weight:bold; padding:0 0 0 6px; cursor:pointer;}
+.menub li a.top_link span {float:left; font-weight:bold; display:block; padding:0 12px 0 6px; height:40px;}
+.menub li a.top_link span.down {float:left; display:block; padding:0 24px 0 12px; height:40px; background:url(images/down.gif) no-repeat right top;}
+.menub li a.top_link:hover {color:#000; background: url(images/button4.gif) no-repeat;}
+.menub li a.top_link:hover span {background:url(images/button4.gif) no-repeat right top;}
+.menub li a.top_link:hover span.down {background:url(images/button4a.gif) no-repeat right top;}
+
+.menub li:hover > a.top_link {color:#000; background: url(images/button4.gif) no-repeat;}
+.menub li:hover > a.top_link span {background:url(images/button4.gif) no-repeat right top;}
+.menub li:hover > a.top_link span.down {background:url(images/button4a.gif) no-repeat right top;}
+
+.menub table {border-collapse:collapse; width:0; height:0; position:absolute; top:0; left:0;}
+
+.menub a:hover {visibility:visible;}
+.menub li:hover {position:relative; z-index:200;}
+
+.menub ul, 
+.menub :hover ul ul, 
+.menub :hover ul :hover ul ul,
+.menub :hover ul :hover ul :hover ul ul,
+.menub :hover ul :hover ul :hover ul :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+.menub :hover ul.sub {left:2px; top:40px; right:2px; background: #fff; padding:3px 0; border:1px solid #999999; white-space:nowrap; width:200px; height:auto;}
+.menub :hover ul.sub li {display:block; height:20px; position:relative; float:left; width:250px;}
+.menub :hover ul.sub li a {font-weight:normal;display:block; font-size:11px; height:20px; width:192px; line-height:20px; text-indent:5px; color:#000; text-decoration:none; border:3px solid #fff; border-width:0 0 0 3px;}
+.menub :hover ul.sub li a.fly {background:#fff url(images/arrow.gif) 80px 7px no-repeat;}
+.menub :hover ul.sub li a:hover {background:#999999; color:#fff;}
+.menub :hover ul.sub li a.fly:hover {background:#999999 url(images/arrow_over.gif) 80px 7px no-repeat; color:#fff;}
+.menub :hover ul li:hover > a.fly {background:#999999 url(images/arrow_over.gif) 80px 7px no-repeat; color:#fff;} 
+
+.menub :hover ul :hover ul,
+.menub :hover ul :hover ul :hover ul,
+.menub :hover ul :hover ul :hover ul :hover ul,
+.menub :hover ul :hover ul :hover ul :hover ul :hover ul
+{left:90px; top:-4px; background: #fff; padding:3px 0; border:1px solid #999999; white-space:nowrap; width:93px; z-index:200; height:auto;}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin: 0 250px 0 250px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+padding: 20px;
+}
+
+#leftcolumn{
+float: left;
+width: 250px; /*Width of left column*/
+margin-left: -100%;
+}
+
+#rightcolumn{
+float: left;
+width: 250px; /*Width of right column*/
+margin-left: -250px; /*Set left marginto -(RightColumnWidth)*/
+}
+
+#done_container {
+    height: 25px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+th {
+    font-weight: bold;
+    font-size: 12pt;
+    color: #eaeaea;
+    padding: 3px;
+}
+
+.float_right{
+    float: right;
+}
+
+.forum_icon{
+    width: 30px;
+    min-width: 30px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.forum_main{
+    width: 65%;
+    min-width: 300px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.forum_info{
+    min-width: 75px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.forum_info_stats{
+    width: 75px;
+    min-width: 75px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.forum_info_lastdate{
+    width: 150px;
+    min-width: 80px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.forum_user{
+    width: 20%;
+    min-width: 200px;
+    padding-left: 15px;
+}
+
+.forum_post{
+    width: 80%;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+td.forum_post ul{
+    padding-left: 15px;
+}
+
+td{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.striped tr:nth-child(even){
+    background-color: #303030;
+}
+.striped tr:nth-child(odd){
+    background-color: #404040;
+}
+
+.forum_table{
+    width: 100%;
+}
+
+.forum_table tr:nth-child(even){
+    background-color: #303030;
+}
+.forum_table tr:nth-child(odd){
+    background-color: #404040;
+}
+
+.forum_post p {
+	margin-bottom: 0.3em;
+}
+
+.forum_modified_on {
+    font-style: italic;
+}
+#undo_move{
+    display: none;
+}
+
+.space_left{
+    padding-left: 10px;
+}
+
+input[type=submit]
+{
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.sortable th.header{
+    background-image: url(images/sort.png); 
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: center right; 
+    padding-left: 20px; 
+    margin-left: -1px; 
+    padding-right: 20px; 
+    margin-right: -1px; 
+}
+
+.sortable th.headerSortUp{
+    background-image: url(images/sort_up.png); 
+}
+
+.sortable th.headerSortDown{
+    background-image: url(images/sort_down.png); 
+}
+
+.tablenew tr:nth-child(even){
+    background-color: #303030;
+}
+.tablenew tr:nth-child(odd){
+    background-color: #404040;
+}
+
+.stylebutton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.stylebutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.stylebutton:active {
+	position:relative;
+	top:1px;
+}
+/* This button was generated using CSSButtonGenerator.com */
