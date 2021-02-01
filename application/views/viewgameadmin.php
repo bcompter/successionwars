@@ -133,3 +133,7 @@
     </p>
     
 </p>
+
+<hr />
+<h4>Delete</h4>
+<?php echo 'Delete This Game | '.anchor('game/delete/'.$game->game_id,'DELETE'); ?>

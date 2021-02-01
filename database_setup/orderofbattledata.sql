@@ -8,9 +8,6 @@
 -- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -1607,8 +1604,3 @@ INSERT INTO `orderofbattledata` (`data_id`, `oob_id`, `type`, `arg0column`, `arg
 (1684, 5, 0, 'faction', 'Federated Suns', 'turn_order', '7', 'money', '0', 'tech_level', '0', 'color', 'Yellow', 'text_color', 'Black', 'free_bribes', '0', 'setup_order', '5', NULL, NULL),
 (1685, 3, 4, 'name', 'Jaime Wolf', 'faction', 'Neutral', 'location_id', 'Free', 'military', '2', 'combat', '3', 'admin', '0', 'loyalty', '7', 'associated_units', 'Wolfs Dragoons', NULL, NULL),
 (1688, 3, 4, 'name', 'Archie MacCarron', 'faction', 'Neutral', 'location_id', 'Free', 'military', '2', 'combat', '2', 'admin', '0', 'loyalty', '7', 'associated_units', 'McCarrons Armored Cavalry', NULL, NULL);
-
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

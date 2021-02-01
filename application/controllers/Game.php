@@ -902,7 +902,7 @@ class Game extends MY_Controller {
             return;
         }
         
-        // Must own the game
+        // Must own the game or be an admin
         $this->load->model('gamemodel');
         $game = $this->gamemodel->get_by_id($game_id);
         if (!isset($game->game_id))
@@ -923,12 +923,27 @@ class Game extends MY_Controller {
             }
         }
         
-        // confirm!
+        // Confirm!
         if ($this->session->flashdata('confirm') != 'YES')
         {
             $this->page['warning'] = 'You are about to delete this game!  Click on the delete link again if you are sure.';
             $this->session->set_flashdata('confirm', 'YES');
-            $this->game_tools($game->game_id);
+            
+            // Determine source, so we know where to route the confirmation...
+            $this->load->library('user_agent');
+    		$refer =  $this->agent->referrer();
+    			
+    		// Redirect
+    		if (strpos($refer, 'view_admin') === false)
+    		{
+    			$this->game_tools($game->game_id);
+    		}
+            else
+            {
+            	$this->view_admin($game->game_id);
+            }
+            
+            
             return;
         }
         
@@ -1759,8 +1774,8 @@ class Game extends MY_Controller {
         }
         
         // Game must not be already built
-	if ( $game->built )
-	{
+		if ( $game->built )
+		{
             $this->db->trans_complete();
             $page['error'] = 'ERROR!';
             $this->load->view('templatexml', $page);
@@ -1779,13 +1794,13 @@ class Game extends MY_Controller {
         $players = $this->playermodel->get_by_game($game_id);
         if (is_countable($players) && count($players) == 0)
         {
-
             unset($players);
             $players = $this->orderofbattlemodel->get_players($game->orderofbattle);
             
             foreach($players as $p)
             {
-                if ($this->debug>2) log_message('error', 'building player '.$p->arg0data);
+                if ($this->debug>2) 
+                	log_message('error', 'building player '.$p->arg0data);
                 unset($player);
                 $player[$p->arg0column] = $p->arg0data;
                 $player[$p->arg1column] = $p->arg1data;
@@ -1811,7 +1826,6 @@ class Game extends MY_Controller {
         }
         
         // If players are done, then move on to territories
-        
         $factions;
         foreach($players as $player)
         {
